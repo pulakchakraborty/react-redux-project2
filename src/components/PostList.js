@@ -9,9 +9,10 @@ class PostList extends Component {
     }
 
     render() {
+        console.log(this.props.posts);
         return(
             <div>
-                From Post List component: {this.props.posts}
+                From Post List component:
             </div>
         );
     }
