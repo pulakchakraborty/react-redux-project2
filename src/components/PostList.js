@@ -11,14 +11,14 @@ class PostList extends Component {
     render() {
         return(
             <div>
-                From Post List component: {this.props.dummy}
+                From Post List component: {this.props.posts}
             </div>
         );
     }
 }
 
 const MapStateToProps = (State) => {
-    return { dummy: State.dummy };
+    return { posts: State.posts };
 }
 
 export default connect(MapStateToProps, { fetchPosts }) (PostList);
